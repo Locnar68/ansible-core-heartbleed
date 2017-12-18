@@ -1,0 +1,25 @@
+galaxy_info:
+  author: Kyle lindeque
+  description: Ansible role for the purpose of ensuring that servers have been updated to the correct Open SSL version, to ensure that the server is not exposed to the heart bleed bug.
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Fedora
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - openssl
+    - heartbleed
+    - security
+
+dependencies: []

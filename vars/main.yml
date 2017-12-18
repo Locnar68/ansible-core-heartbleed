@@ -1,0 +1,13 @@
+---
+
+update_packages: ["openssl","libssl1.0.0"]
+restart_services:
+  - nginx
+  - apache2
+  - postgresql
+  - php5-fpm
+  - openvpn
+  - postfix
+  - monit
+  - zabbix-server
+  - unbound

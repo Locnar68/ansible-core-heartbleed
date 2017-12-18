@@ -1,0 +1,10 @@
+---
+
+- name: Include correct setup
+  include_tasks: "{{ ansible_os_family }}.yml"
+
+- name: Check processes
+  shell: >
+    if [ "$(sudo lsof -n | grep ssl | grep DEL | wc -l)" != "0" ]; \
+    then echo "We still have affected processes"; checkrestart; \
+    exit 1; fi
