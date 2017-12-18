@@ -1,0 +1,9 @@
+---
+
+- name: "Update packages"
+  yum:
+    name: openssl
+    state: latest
+    update_cache: yes
+  ignore_errors: yes
+  notify: restart services

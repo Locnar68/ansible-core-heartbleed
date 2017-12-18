@@ -4,4 +4,4 @@
   service:
     name: "{ item }"
     state: restarted
-  with_items: restart_services
+  with_items: "{ restart_services }"

@@ -1,6 +1,4 @@
 ---
-
-update_packages: ["openssl","libssl1.0.0"]
 restart_services:
   - nginx
   - apache2

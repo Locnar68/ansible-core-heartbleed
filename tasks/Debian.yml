@@ -1,5 +1,11 @@
 ---
-  - name: "Install packages and update cache"
-    apt: pkg="{{ item }}" state=latest update_cache=yes
-    with_items: update_packages
-    ignore_errors: yes
+
+- name: "Update packages"
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+    update_cache: yes
+  with_items:
+      - openssl
+      - libssl1.0.0
+  ignore_errors: yes
