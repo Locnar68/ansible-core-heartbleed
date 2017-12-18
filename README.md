@@ -31,8 +31,7 @@ Example Playbook
 
 License
 -------
-
-To be updated
+This code is licensed under the GNU General Public License v3.0.
 
 Author Information
 ------------------
